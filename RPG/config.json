@@ -1,0 +1,18 @@
+{
+	"target": "linux/amd64",
+	"http": "127.0.0.1:56741",
+	"workdir": "/path/to/workdir-new",
+	"kernel_obj": "/path/to/linux",
+	"image": "/path/to/bullseye.img",
+	"sshkey": "/path/to/bullseye.id_rsa",
+	"priority_table": "/path/to/relation_matrix.csv",
+	"syzkaller": "./",
+	"procs": 8,
+	"type": "qemu",
+	"vm": {
+		"count": 8,
+		"kernel": "/path/to/bzImage",
+		"cpu": 4,
+		"mem": 4096
+	}
+}
